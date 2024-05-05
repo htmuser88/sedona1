@@ -1,12 +1,114 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Седона</title>
+</head>
+<body class="page__body">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img src="img/logo.svg" width="226" height="30" alt="Седона.">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>
+              главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">
+              фото и видео
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              форма отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              htmlacademy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-  </body>
+
+  <main class="main-container">
+    <h1 class="visually-hidden">welcome</h1>
+    <section class="stats">
+      <div class="stats__wrapper">
+        <header class="stats__header">
+          <h2 class="visually-hidden">
+            - to the gorgeous -
+          </h2>
+          <p class="stats__slogan">
+            sedona
+          </p>
+          <p class="stats__intro">
+            "becouse the grand canyon sucks"
+          </p>
+          <p class="stats__legend stats__legend--top">
+            <img src="img/sedona.png" width="226" height="480" alt="Седона.">
+          </p>
+        </header>
+      </div>
+    </section>
+    <section class="title">
+      <div class="title__wrapper">
+        <header class="title__header">
+          <h2 class="visually-hidden">
+            СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!
+          </h2>
+          <p class="title__slogan">
+            Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+          </p>
+        </header>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__contacts contacts">
+        <b class="contacts__title">#visitSEDONA</b>
+        <!-- <p class="contacts__text">
+          г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+          <a class="contacts__phone" href="tel:+78125556666">
+            <span class="contacts__phone-text">Тел.:</span> +7 (812) 555-66-66
+          </a>
+        </p> -->
+      </div>
+      <div class="main-footer__social social">
+        <!-- <b class="social__title">Давайте дружить!</b> -->
+        <ul class="social__list">
+          <li class="social__item">
+            <!-- <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a> -->
+            <img src="img/social__vk.svg" width="50" height="50" alt="social__vk">
+          </li>
+          <li class="social__item">
+            <!-- <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a> -->
+            <img src="img/social__telegram.svg" width="50" height="50" alt="social__telegram">
+          </li>
+          <li class="social__item">
+            <!-- <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a> -->
+            <img src="img/social_tb.svg" width="50" height="50" alt="social_tb">
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <!-- <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a> -->
+        <img src="img/logo__html.svg" width="50" height="50" alt="social_tb">
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
