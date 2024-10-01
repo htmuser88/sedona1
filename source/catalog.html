@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Седона</title>
+</head>
+<body class="page__body">
+
+    <header class="main-header">
+    <a class="main-header__logo">
+        <img src="img/logo.svg" width="226" height="30" alt="Седона.">
+    </a>
+    <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+            <a>
+                главная
+            </a>
+            </li>
+            <li class="site-list__item">
+            <a href="photo.html">
+                фото и видео
+            </a>
+            </li>
+            <li class="site-list__item">
+            <a href="form.html">
+                форма отзыва
+            </a>
+            </li>
+            <li class="site-list__item">
+            <a href="#">
+                htmlacademy
+            </a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    </header>
+
+    <section class="reviews">
+    <div class="reviews__wrapper slider">
+      <h2 class="reviews__title">Отзывы о нас</h2>
+      <a class="reviews__write button" href="form.html">Оставить свой</a>
+      <div class="reviews__list slider__list">
+        <blockquote class="reviews__item slider__item">
+          <img class="reviews__author-image" src="img/picture-travis-phone@1x.jpg" width="50" height="33"
+               alt="Фото Трэвиса Баркера.">
+          <div class="reviews__author-info">
+            <cite class="reviews__author-name">Трэвис Баркер</cite>
+            <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+          </div>
+        </blockquote>
+        <blockquote class="reviews__item slider__item">
+          <img class="reviews__author-image" src="img/picture-travis-phone@1x.jpg" width="50" height="33"
+               alt="Фото Джона Смита.">
+          <div class="reviews__author-info">
+            <cite class="reviews__author-name">Джон Смит</cite>
+            <p class="reviews__text">Отличную стрижку мне сделали ребята.</p>
+          </div>
+        </blockquote>
+        <blockquote class="reviews__item slider__item">
+          <img class="reviews__author-image" src="img/picture-travis-phone@1x.jpg" width="50" height="33"
+               alt="Фото Ивана Бородайло.">
+          <div class="reviews__author-info">
+            <cite class="reviews__author-name">Иван Бородайло</cite>
+            <p class="reviews__text">В Бородинском ваша борода в надёжных руках!</p>
+          </div>
+        </blockquote>
+        <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+        <button class="reviews__next" type="button">Следующий отзыв</button>
+      </div>
+      <p class="reviews__toggles slider__toggles">
+        <button class="slider__toggle slider__toggle--current" type="button">1</button>
+        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </p>
+    </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="main-footer__wrapper">
+          <div class="main-footer__contacts contacts">
+            <b class="contacts__title">Барбершоп «Бородинский»</b>
+            <p class="contacts__text">
+              г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+              <a class="contacts__phone" href="tel:+78125556666">
+                <span class="contacts__phone-text">Тел.:</span> +7 (812) 555-66-66
+              </a>
+            </p>
+          </div>
+          <div class="main-footer__social social">
+            <b class="social__title">Давайте дружить!</b>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-footer__copyright copyright">
+            <b class="copyright__text">Разработано:</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </div>
+        </div>
+    </footer>
+</body>
