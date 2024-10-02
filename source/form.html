@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+
+  <body class="page">
+
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img src="./img/logo.svg" width="185" height="96" alt="Седона.">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="index.html">
+              главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">
+              фото и видео
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              форма отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="index33.html">
+              htmlacademy
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <section class="stats">
+        <div class="stats__background-wrapper">
+          <img src="./img/back-desktop.svg" alt="Фон">
+        </div>  
+        <div class="stats__wrapper">
+          <header class="stats__header">
+            <h2 class="visually__hidden">
+              <!-- - to the gorgeous - -->
+              <img src="./img/gargeous.svg" width="174" height="28" alt="to the gorgeous">
+            </h2>
+            <p class="stats__slogan">
+              <!-- sedona -->
+              <img src="./img/sedona.svg" width="459" height="79" alt="sedona">
+            </p>
+            <p class="stats__intro">
+              <!-- "becouse the grand canyon sucks" -->
+              <img src="./img/becose.svg" width="281" height="74" alt="becouse">
+            </p>
+          </header>
+        </div>
+      </section>
+
+      
+      <section class="container">
+        <div class="container__title">
+          <header class="title__header">
+            <h2 class="visually-hidden">
+              оставьте свой отзыв
+            </h2>
+            <p class="title__slogan">
+              помогите нашим отелям стать лучше!
+              оставьте отзыв о них, а так же
+              о посещенных вами достопримечательностях
+            </p>
+          </header>
+        </div>
+        <div class="container__formik">
+          <div class="formik__wrapper slider">
+            <form action='/login' method='POST'>
+              <fieldset>
+                <legend>представьтесь</legend>
+    
+                <label for='username'>имя*:</label>
+                <br>
+                <input type='text' id='username' name='username' value="Пётр">
+                <br><br>
+    
+                <label for='lastname'>фамилия*:</label>
+                <br>
+                <input type='text' id='lastname' name='lastname' value="Пустота">
+                <br><br>
+    
+                <label for='patronymic'>отчество*:</label>
+                <br>
+                <input type='text' id='patronymic' name='patronymic' value="Викторович">
+                <br><br>
+              </fieldset>  
+    
+              <br>
+    
+              <fieldset>
+                <legend>контактная информация:</legend>
+    
+                <br>  
+    
+                <label for='phone'>контактный телефон*:</label>
+                <br>
+                <input type='text' id='phone' name='phone' value="Введите телефон">
+                <br><br>
+    
+                <label for='email'>электронная почта*:</label>
+                <br>
+                <input type='text' id='email' name='email' value="Введите e-mail">
+                <br><br>
+              </fieldset>
+    
+              <br>
+    
+              <fieldset>
+                <legend>ваше общее впечатление</legend>
+              
+                <br>
+    
+                <div>
+                  <input type="radio" id="huey" name="huey" value="huey" checked>
+                  <label for="huey">скорее положительное</label>
+                </div>
+    
+                <br>
+              
+                <div>
+                  <input type="radio" id="dewey" name="dewey" value="dewey">
+                  <label for="dewey">скорее отрицательное</label>
+                </div>
+    
+                <br>
+              
+                <div>
+                  <input type="radio" id="louie" name="louie" value="louie">
+                  <label for="louie">затрудняюсь ответить</label>
+                </div>
+    
+                <br>
+    
+              </fieldset>
+    
+              <br>
+              <fieldset>
+                <legend>посещенные достопримечательности</legend>
+                  <p>
+                  <label><input type="checkbox" value="one"> мост дьявола</label><br>
+                  <label><input type="checkbox" value="two"> гора-колокол</label><br>
+                  <label><input type="checkbox" value="three"> слайд-парк</label><br>
+                  <label><input type="checkbox" value="two"> красные скалы</label><br>
+                  </p>
+              </fieldset>    
+    
+              <br>
+    
+              <fieldset>
+                <label for="story">опишите свои эмоции:</label>
+                <br>
+                <textarea id="story" name="story" rows="5" cols="33">
+                  опишите подробно все свои восторги...
+                </textarea>
+              </fieldset>
+    
+              <br>
+              <br>
+    
+              <button type="button">отправить отзыв</button> 
+              <p>* - обязательное поле</p>
+    
+            </form>
+          </div>
+        </div>  
+      </section> 
+    </main>
+    
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__contacts contacts">
+          <b class="contacts__title">#visitSEDONA</b>
+        </div>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+            </li>
+            <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+            </li>
+          </ul>
+        </div>
+      <div class="main-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+      </div>
+    </footer>
+
+  </body>
+</html> 
